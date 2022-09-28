@@ -16,5 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-
+ 
+Route::resource('pedulin', 'App\Http\Controllers\PedulinController');
