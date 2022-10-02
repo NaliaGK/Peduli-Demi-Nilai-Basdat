@@ -6,7 +6,7 @@
             <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Register for PeduliLindungi Here</h2>
+                        <h2>PeduliLindungi Users List (ADMIN ONLY)</h2>
                     </div>
                     <div class="card-body">
                         <a href="{{ url('/pedulin/create') }}" class="btn btn-success btn-sm" title="Add New User">

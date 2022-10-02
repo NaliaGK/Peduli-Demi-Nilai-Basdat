@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Registrasi - PeduliLindungi</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body class="bg-gradient-primary" style="background-color: rgb(31,101,153);margin-top: 0;">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card shadow-lg o-hidden border-0 my-5">
+            <div class="card-body p-0">
+                <div class="p-5">
+                    <div class="text-center"><a href="login.html"><img src="assets/img/icon-02.png" style="margin-bottom: -32px;margin-top: -47px;"></a>
+                        <h4 class="text-dark mb-4">Registrasi</h4>
+                    </div>
+                    <form class="user">
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="First Name" name="first_name" minlength="1"></div>
+                            <div class="col-sm-6"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Last Name" name="last_name" minlength="1"></div>
+                        </div>
+                        <p>*note: masukkan nama depan dan nama belakang sesuai KTP atau Kartu Keluarga. JIka nama lebih dari dua kata, dapat dipisahkan menjadi dua.<br></p>
+                        <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Tempat Lahir" name="tempat_lahir" minlength="1"></div>
+                        <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="NIK" name="nik" minlength="1"></div>
+                        <p>*note: bulan dan tanggal lahir didapatkan dari NIK. Jika NIK dan TTL berbeda, maka akan digunakan yang terdapat pada NIK.<br></p>
+                        <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email Address" name="email"></div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="First Name" name="first_name" minlength="1"></div>
+                            <div class="col-sm-6"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Last Name" name="last_name" minlength="1"></div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0" style="margin-right: -428px;width: 591px;"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Kode Area" name="area_code" minlength="1" value="+62" style="width: 82px;margin-right: 94px;"></div>
+                            <div class="col-sm-6" style="margin-right: 0px;margin-left: 10px;"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="No. HP" name="hp" minlength="1" style="width: 910px;padding-right: 0px;margin-right: 0px;"></div>
+                        </div>
+                        <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Alamat" name="alamat" multiple="" minlength="1"></div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Password" name="password" minlength="1"></div>
+                            <div class="col-sm-6"><input class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" placeholder="Ulangi Password" name="password_repeat" minlength="1"></div>
+                        </div>
+                        <hr>
+                        <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Saya menerima segala isi syarat penggunaan dan kebijakan privasi dari aplikasi atau layanan ini</label></div>
+                        <div
+                            class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Kirimi saya email mengenai penyebaran COVID-19</label></div><button class="btn btn-primary btn-block text-white btn-user"
+                    type="submit" style="margin-top: 16px;">Register Account</button></form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

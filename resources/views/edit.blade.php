@@ -2,7 +2,9 @@
 @section('content')
  
 <div class="card">
-  <div class="card-header">Contactus Page</div>
+  <div class="card-header">
+      <h2>Edit User Page (ADMIN ONLY)</h2>
+    </div>
   <div class="card-body">
       
       <form action="{{ url('pedulin/' .$pedulins->id) }}" method="post">

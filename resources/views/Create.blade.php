@@ -2,7 +2,9 @@
 @section('content')
  
 <div class="card">
-  <div class="card-header">PeduliLindungi Page</div>
+  <div class="card-header">
+      <h2>Register for PeduliLindungi Here</h2>
+    </div>
   <div class="card-body">
       
       <form action="{{ url('pedulin') }}" method="post">

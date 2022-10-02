@@ -3,7 +3,9 @@
  
  
 <div class="card">
-  <div class="card-header">User Page</div>
+  <div class="card-header">
+      <h2>User Page (USER VIEW)</h2>  
+      </div>
   <div class="card-body">
    
  
