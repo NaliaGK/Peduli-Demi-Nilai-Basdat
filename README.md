@@ -3,6 +3,7 @@
 <a href="https://github.com/NaliaGK/Peduli-Demi-Nilai-Basdat/commits/main"><img src="https://img.shields.io/github/commit-activity/m/NaliaGK/Peduli-Demi-Nilai-Basdat"></a>
 
 
+<a href="https://github.com/NaliaGK/Peduli-Demi-Nilai-Basdat"><img src="https://github.com/NaliaGK/Peduli-Demi-Nilai-Basdat/tree/main/Bootstrap%20Saves/pla.gif" alt="PeduliLindungi_Reworked" width="1920"/></a><br>
 ## Tentang PediliLindungi: Reworked
 
 PeduliLindungi: Reworked adalah sebuah aplikasi web atau <i>aplikasi smartphone</i> yang membantu pemerintah dan juga  penduduk Indonesia atau peduduk asing yang sedang menetap di Indonesia untuk melakukan tracing dan pertolongan pertama. Aplikasi ini adalah perbaikan dari aplikasi awal dengan nama yang sama. Dengan aplikasi ini, diharapkan dapat membantu meneliti, menjaga, mencegah penularan virus COVID-19.
@@ -48,11 +49,11 @@ Bagian terakhir yaitu bagian pelacakan vaksin dan covid. Tabel-tabel di bagian i
 ## Pengembang
 **Supervisor : [Muhammad Noor Fakhruzzaman, S.Kom., M.Sc.](https://github.com/ruzcmc)**<br>
 
-- **[Nalia Graciella Kerrysa](https://github.com/NaliaGK)**
-- **[Nicholas Juan K. P.](https://github.com/Neek0tine)**
-- **[Kevin Caesar S.](https://www.instagram.com/kev_simorangkir/)**
 - **[David Kevas J.](https://64robots.com)**
 - **[Viola Rosa I. M.](https://www.instagram.com/violarosa.im/)**
+- **[Kevin Caesar S.](https://www.instagram.com/kev_simorangkir/)**
+- **[Nicholas Juan K. P.](https://github.com/Neek0tine)**
+- **[Nalia Graciella Kerrysa](https://github.com/NaliaGK)**
 
 ## Contributing
 
