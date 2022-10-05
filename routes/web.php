@@ -20,7 +20,8 @@ Route::get('/login', function () {
     return view('login');
 });
  
-Route::resource('pedulin', 'App\Http\Controllers\PedulinController');
+Route::resource('/pedulin', 'App\Http\Controllers\PedulinController');
+Route::resource('/faskes', 'App\Http\Controllers\FaskesController');
 
 Route::get('/register', function () {
     return view('register');

@@ -44,7 +44,7 @@ tr:nth-child(even) {
         <div class="col-md-9">
             <div class="card">
                 <div class="card-header">
-                    <h2>PeduliLindungi Users List (ADMIN ONLY)</h2>
+                    <h2>PeduliLindungi Faskes List</h2>
                 </div>
                 <div class="card-body">
                     <!-- <a href="{{ url('/pedulin/create') }}" class="btn btn-success btn-sm" title="Add New User">
@@ -57,23 +57,28 @@ tr:nth-child(even) {
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>Name</th>
-                                    <th>Address</th>
-                                    <th>Mobile</th>
-                                    <th>Actions</th>
+                                    <th>Nama</th>
+                                    <th>Alamat</th>
+                                    <th>Deskripsi</th>
+                                    <th>No.tlp</th>
+                                    <th>Bank</th>
+                                    <th>No.Rekening</th>
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach($pedulins as $item)
+                            @foreach($faskes as $item)
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
-                                    <td>{{ $item->name }}</td>
-                                    <td>{{ $item->address }}</td>
-                                    <td>{{ $item->mobile }}</td>
+                                    <td>{{ $item->nama_faskes }}</td>
+                                    <td>{{ $item->alamat_faskes }}</td>
+                                    <td>{{ $item->deskripsi_faskes }}</td>
+                                    <td>{{ $item->contact_faskes }}</td>
+                                    <td>{{ $item->nama_bank }}</td>
+                                    <td>{{ $item->no_rekening }}</td>
 
                                     <td>
-                                        <a href="{{ url('/pedulin/' . $item->id) }}" title="View User"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
-                                        <a href="{{ url('/pedulin/' . $item->id . '/edit') }}" title="Edit User"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                                        <a href="{{ url('/faskes/' . $item->id) }}" title="View Faskes"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                        <a href="{{ url('/faskes/' . $item->id . '/edit') }}" title="Edit Faskes"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
 
                                         <form method="POST" action="{{ url('/pedulin' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                             {{ method_field('DELETE') }}
@@ -90,7 +95,6 @@ tr:nth-child(even) {
                 </div>
             </div>
         </div>
- 
     </div>
 </div>
 @endsection

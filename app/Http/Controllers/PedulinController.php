@@ -14,13 +14,12 @@ class PedulinController extends Controller
       return view ('index')->with('pedulins', $pedulins);
     }
  
-    
     public function create()
     {
         return view('create');
     }
  
-  
+   
     public function store(Request $request)
     {
         $input = $request->all();
@@ -58,3 +57,4 @@ class PedulinController extends Controller
         return redirect('pedulin')->with('flash_message', 'User deleted!');  
     }
 }
+
