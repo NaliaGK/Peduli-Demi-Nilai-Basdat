@@ -8,7 +8,7 @@
                         <h2>PCR</h2>
                     </div>
                     <div class="card-body">
-                        <a href="{{ url('/pcr/create') }}" class="btn btn-success btn-sm" title="Add New Student">
+                        <a href="{{ url('/order-pcr/create') }}" class="btn btn-success btn-sm" title="Add New Student">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
                         <br/>
@@ -19,11 +19,9 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Id PCR</th>
-                                        <th>Id faskes</th>
-                                        <th>Lokasi</th>
-                                        <th>Alamat</th>
-                                        <th>Harga</th>
-                                        <th>Waktu</th>
+                                        <th>Id user</th>
+                                        <th>Tanggal Booking</th>
+                                        <th>Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>

@@ -9,5 +9,6 @@ class PCR extends Model
 {
     protected $table = 'pcr';
     protected $primaryKey = 'id_pcr';
-    protected $fillable = ['id_faskes', 'lokasi_pcr', 'harga_pcr','waktu'];
+    protected $fillable = ['id_faskes', 'lokasi_pcr', 'alamat_pcr', 'harga_pcr','waktu'];
+    public $timestamps = false;
 }
