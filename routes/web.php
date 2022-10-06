@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BoosterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,9 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/daftar-booster', [BoosterController::class, 'show']);
+
  
 Route::resource('/pedulin', 'App\Http\Controllers\PedulinController');
 
@@ -33,6 +37,7 @@ Route::resource('/booster', 'App\Http\Controllers\BoosterController');
 Route::get('/register', function () {
     return view('register');
 });
+
 
 Route::get('/profile', function () {
     return view('profile');

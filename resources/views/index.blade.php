@@ -47,9 +47,9 @@ tr:nth-child(even) {
                     <h2>PeduliLindungi Users List (ADMIN ONLY)</h2>
                 </div>
                 <div class="card-body">
-                    <!-- <a href="{{ url('/pedulin/create') }}" class="btn btn-success btn-sm" title="Add New User">
+                    <a href="{{ url('/pedulin/create') }}" class="btn btn-success btn-sm" title="Add New User">
                         <i class="fa fa-plus" aria-hidden="true"></i> Add New
-                    </a> -->
+                    </a>
                     <br/>
                     <br/>
                     <div class="table-responsive">

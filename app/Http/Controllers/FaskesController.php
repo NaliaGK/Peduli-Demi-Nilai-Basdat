@@ -54,7 +54,9 @@ class FaskesController extends Controller
   
     public function destroy($id)
     {
-        Pedulin::destroy($id);
+        Faskes::destroy($id);
         return redirect('faskes')->with('flash_message', 'Faskes deleted!');  
     }
+
+ 
 }

@@ -29,9 +29,9 @@ class BoosterController extends Controller
     }
  
     
-    public function show($id)
+    public function show()
     {
-        $boost = Booster::find($id);
+        $boost = Booster::all();
         return view('show_booster')->with('boost', $boost);
     }
  
@@ -54,7 +54,7 @@ class BoosterController extends Controller
   
     public function destroy($id)
     {
-        Obat::destroy($id);
+        Booster::destroy($id);
         return redirect('booster')->with('flash_message', 'Booster deleted!');  
     }
 }
