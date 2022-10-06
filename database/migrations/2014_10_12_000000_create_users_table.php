@@ -15,18 +15,21 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-            $table->string('name');
-            $table->string('last name');
-            $table->string('tempat_lahir');
-            $table->integer('NIK');
-            $table->string('e-mail address');
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
+            $table->string('tempat_lahir')->nullable();
+            $table->string('nik')->nullable();
+            $table->string('email')->unique();
+            /*$table->string('email_verified_at');*/
             $table->string('password');
-            $table->string('ulangi password');
-            $table->boolean('setuju');
-            $table->boolean('kirim e-mail');
-            $table->string('address');
-            $table->string('mobile');
+            /* Users: 0=>User, 1=>Faskes, 2=>ADMIN */
+            /*$table->boolean('tos_agreed');*/
+            $table->boolean('subscription')->default(0)->nullable();
+            $table->string('alamat')->default('N/A');
+            $table->string('mobile')->nullable();
+            $table->string('role')->default(0)->nullable();
+            $table->rememberToken();
+            $table->timestamps();
         });
     }
 

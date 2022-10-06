@@ -16,28 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/login', function () {
-    return view('login');
-});
- 
-Route::resource('/pedulin', 'App\Http\Controllers\PedulinController');
 
-Route::resource('/faskes', 'App\Http\Controllers\FaskesController');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::resource('/meds', 'App\Http\Controllers\ObatController');
+require __DIR__.'/auth.php';
 
-Route::resource('/pcr', 'App\Http\Controllers\PCRController');
+Auth::routes();
 
-Route::resource('/booster', 'App\Http\Controllers\BoosterController');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/register', function () {
-    return view('register');
-});
-
-Route::get('/profile', function () {
-    return view('profile');
-});
-
-Route::get('/forget', function () {
-    return view('forget');
-});
+Route::get('admin/home', [App\Http\Controllers\HomeController::class, 'handleAdmin'])->name('admin.route')->middleware('admin');
