@@ -68,7 +68,7 @@
         </p>
         <div class="u-video u-video-contain u-video-1">
           <div class="embed-responsive embed-responsive-1">
-            <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/2hmI15CajEM?mute=0&amp;showinfo=0&amp;controls=0&amp;start=0" frameborder="0" allowfullscreen=""></iframe>
+            <!-- <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://www.youtube.com/embed/2hmI15CajEM?mute=0&amp;showinfo=0&amp;controls=0&amp;start=0" frameborder="0" allowfullscreen="0"></iframe> -->
           </div>
         </div>
       </div>
