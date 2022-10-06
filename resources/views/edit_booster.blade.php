@@ -3,7 +3,7 @@
  
 <div class="card">
   <div class="card-header">
-      <h2>Edit Booster Page (ADMIN ONLY)</h2>
+      <h2>Edit Booster</h2>
     </div>
   <div class="card-body">
       

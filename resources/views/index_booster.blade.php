@@ -5,7 +5,7 @@
             <div class="col-md-9">
                 <div class="card">
                     <div class="card-header">
-                        <h2>Booster (FASKES)</h2>
+                        <h2>Booster</h2>
                     </div>
                     <div class="card-body">
                         <a href="{{ url('/booster/create') }}" class="btn btn-success btn-sm" title="Add New Booster">

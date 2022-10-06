@@ -3,7 +3,7 @@
  
 <div class="card">
   <div class="card-header">
-      <h2>Tambahkan pengadaan vaksinasi Booster (FASKES)</h2>
+      <h2>Tambahkan pengadaan vaksinasi Booster</h2>
     </div>
   <div class="card-body">
       

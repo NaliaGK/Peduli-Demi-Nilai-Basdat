@@ -29,9 +29,9 @@ class PCRController extends Controller
     }
  
     
-    public function show($id)
+    public function show()
     {
-        $pcr = PCR::find($id);
+        $pcr = PCR::all();
         return view('show_pcr')->with('pcr', $pcr);
     }
  
