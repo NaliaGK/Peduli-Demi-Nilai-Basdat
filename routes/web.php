@@ -21,7 +21,14 @@ Route::get('/login', function () {
 });
  
 Route::resource('/pedulin', 'App\Http\Controllers\PedulinController');
+
 Route::resource('/faskes', 'App\Http\Controllers\FaskesController');
+
+Route::resource('/meds', 'App\Http\Controllers\ObatController');
+
+Route::resource('/pcr', 'App\Http\Controllers\PCRController');
+
+Route::resource('/booster', 'App\Http\Controllers\BoosterController');
 
 Route::get('/register', function () {
     return view('register');

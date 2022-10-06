@@ -17,7 +17,7 @@ class FaskesController extends Controller
     
     public function create()
     {
-        return view('create');
+        return view('create_faskes');
     }
  
    
@@ -32,14 +32,14 @@ class FaskesController extends Controller
     public function show($id)
     {
         $faskes = Faskes::find($id);
-        return view('show')->with('faskes', $faskes);
+        return view('show_faskes')->with('faskes', $faskes);
     }
  
     
     public function edit($id)
     {
         $faskes = Faskes::find($id);
-        return view('edit')->with('faskes', $faskes);
+        return view('edit_faskes')->with('faskes', $faskes);
     }
  
   
