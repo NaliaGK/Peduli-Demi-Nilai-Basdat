@@ -37,7 +37,7 @@
                             <div class="col-sm-6 mb-3 mb-sm-0">
                                 <input class="form-control{{ $errors->has('first_name') ? ' is-invalid' : '' }}" type="text" id="first_name" placeholder="First Name" name="first_name" minlength="1" value="{{ old('first_name') }}" required autofocus></div>
 
-                            @if ($errors->has('name'))
+                            @if ($errors->has('first_name'))
                                 <span class="invalid-feedback">
                                     <strong>{{ $errors->first('first_name') }}</strong>
                                 </span>
@@ -66,7 +66,7 @@
                         @endif
 
                         <div class="form-group">
-                            <input class="form-control{{ $errors->has('nik') ? ' is-invalid' : '' }}" id="nik" aria-describedby="nik" placeholder="NIK" name="nik" minlength="12" required></div>
+                            <input class="form-control{{ $errors->has('nik') ? ' is-invalid' : '' }}" id="nik" aria-describedby="nik" placeholder="NIK" name="nik" minlength="1" required></div>
 
                         @if ($errors->has('nik'))
                             <span class="invalid-feedback">
@@ -141,9 +141,9 @@
                         <div class="form-check"><input class="form-check-input" type="checkbox" id="email_agreement" name="subscription"><label class="form-check-label">Kirimi saya email mengenai penyebaran COVID-19</label></div>
                         <label for="cars">Saya adalah:</label>
                         <select name="role" id="role">
-                            <option value="user">Pengguna</option>
-                            <option value="faskes">Faskes</option>
-                            <option value="admin">Admin</option>
+                            <option value="0">Pengguna</option>
+                            <option value="2">Faskes</option>
+                            <option value="1">Admin</option>
                         </select>
                             <button class="btn btn-primary btn-block text-white btn-user" type="submit" style="margin-top: 16px;">{{ __('Daftar') }}</button></form>
                     </form>

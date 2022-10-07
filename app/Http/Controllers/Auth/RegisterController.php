@@ -8,6 +8,8 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -50,24 +52,36 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'first_name' => ['nullable', 'string', 'max:255'],
+            'last_name' => ['nullable', 'string', 'max:255'],
+            'tempat_lahir'=> ['nullable', 'string', 'max:255'],
+            'nik' => ['nullable', 'numeric', 'min:12'],
+            'email' => ['nullable', 'string', 'email', 'unique:users'],
+            'alamat'=> ['nullable', 'string', 'max:255'],
+            'subscription'=>['nullable'],
+            'mobile'=> ['nullable', 'numeric', 'unique:users', 'min:8'],
+            'password' => ['nullable', 'required', 'confirmed', Rules\Password::defaults()],
         ]);
     }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return \App\Models\User
-     */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
+        return User::create(([
+            
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
+            'tempat_lahir'=> $data['tempat_lahir'],
+            'nik' => $data['nik'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);
+            'email_verified_at' => now(),
+            'remember_token' => Str::random(10),
+            'account_type'=> 0,
+            'subscription'=> 0,
+            'alamat'=>$data['alamat'],
+            'mobile'=>$data['mobile'],
+            'role'=>$data['role']
+
+        ]));
     }
 }

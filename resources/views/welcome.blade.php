@@ -5,10 +5,10 @@
     <meta name="keywords" content="Lindungi diri dan sekitar dengan berpartisipasi dalam program Vaksinasi COVID-19, Apa itu PeduliLindungi?, Vaksinasi COVID-19, Mari berpartisipasi melindungi sesama">
     <meta name="description" content="">
     <title>Home</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Home.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <link rel="stylesheet" href="assets/css/nicepage.css" media="screen">
+<link rel="stylesheet" href="assets/css/Home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="assets/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="assets/js/nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.19.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     
@@ -28,16 +28,14 @@
     <meta property="og:type" content="website">
   </head>
   <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-f9b1"><div class="u-clearfix u-sheet u-sheet-1">
-        <a href="https://localhost" class="u-image u-logo u-image-1" data-image-width="650" data-image-height="367">
-          <img src="np://user.desktop.localhost/Site_163080967/images/pl.png?rand=9b96" class="u-logo-image u-logo-image-1" data-image-width="217.7308">
+          <img src="{{ URL::asset("images\pl.png") }}" class="u-logo-image u-logo-image-1" data-image-width="217.7308">
         </a>
-        <a href="https://nicepage.com/k/loans-website-templates" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius-8 u-btn-1">Login/Registrasi</a>
-        <img class="u-image u-image-contain u-image-default u-image-2" src="images/pl11.png" alt="" data-image-width="559" data-image-height="141">
+        <a href="login" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius-8 u-btn-1">Login/Registrasi</a>
+        <img class="u-image u-image-contain u-image-default u-image-2" src="{{ URL::asset("images\pl11.png") }}" alt="" data-image-width="559" data-image-height="141">
       </div></header>
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="1000" data-image-height="667" id="sec-09cd">
       <div class="u-align-center u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-1">Lindungi diri dan sekitar dengan berpartisipasi dalam program Vaksinasi COVID-19</h2>
-        <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-custom-color-1 u-radius-8 u-btn-1">Registrasi</a>
       </div>
     </section>
     <section class="u-align-center u-clearfix u-section-2" id="sec-8fda">
