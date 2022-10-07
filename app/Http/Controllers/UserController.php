@@ -10,51 +10,51 @@ class UserController extends Controller
   
     public function index()
     {
-        $pedulins = Pedulin::all();
-      return view ('index')->with('pedulins', $pedulins);
+        $users = User::all();
+      return view ('index_user')->with('users', $users);
     }
  
     
     public function create()
     {
-        return view('create');
+        return view('create_user');
     }
  
   
     public function store(Request $request)
     {
         $input = $request->all();
-        Pedulin::create($input);
-        return redirect('pedulin')->with('flash_message', 'User Addedd!');  
+        User::create($input);
+        return redirect('users')->with('flash_message', 'User Addedd!');  
     }
  
     
     public function show($id)
     {
-        $pedulin = Pedulin::find($id);
-        return view('show')->with('pedulins', $pedulin);
+        $users = User::find($id);
+        return view('show_user')->with('users', $users);
     }
  
     
     public function edit($id)
     {
-        $pedulin = Pedulin::find($id);
-        return view('edit')->with('pedulins', $pedulin);
+        $users = User::find($id);
+        return view('edit_user')->with('users', $users);
     }
  
   
     public function update(Request $request, $id)
     {
-        $pedulin = Pedulin::find($id);
+        $users = User::find($id);
         $input = $request->all();
-        $pedulin->update($input);
-        return redirect('pedulin')->with('flash_message', 'User Updated!');  
+        $users->update($input);
+        return redirect('users')->with('flash_message', 'User Updated!');  
     }
  
   
     public function destroy($id)
     {
-        Pedulin::destroy($id);
-        return redirect('pedulin')->with('flash_message', 'User deleted!');  
+        User::destroy($id);
+        return redirect('users')->with('flash_message', 'User deleted!');  
     }
 }

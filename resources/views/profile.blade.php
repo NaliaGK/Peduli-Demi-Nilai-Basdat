@@ -23,8 +23,8 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio" style="font-size: 20px;">Profil</a></li>
-                            <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about" style="font-size: 20px;">Sertifikat</a></li>
-                            <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact" style="font-size: 20px;">Pengaturan</a></li>
+                            <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="http://127.0.0.1:8000/daftar-pcr" style="font-size: 20px;">Daftar PCR</a></li>
+                            <li class="nav-item mx-0 mx-lg-1" role="presentation"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="http://127.0.0.1:8000/daftar-booster" style="font-size: 20px;">Daftar Booster</a></li>
                         </ul>
                     </div>
                 </div>

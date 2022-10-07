@@ -12,6 +12,9 @@ Route::get('/', function () {
 Route::get('/daftar-booster', [BoosterController::class, 'show']);
 Route::get('/daftar-pcr', [PCRController::class, 'show']);
 Route::resource('/pedulin', 'App\Http\Controllers\PedulinController');
+Route::resource('/booster', 'App\Http\Controllers\BoosterController');
+Route::resource('/pcr', 'App\Http\Controllers\PCRController');
+Route::resource('/users', 'App\Http\Controllers\UserController');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -35,3 +38,6 @@ Route::get('/forget', function () {
     return view('forget');
 
 });
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
